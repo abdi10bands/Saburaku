@@ -37,7 +37,7 @@ public class SabukaruHomePageSteps extends BaseTest {
     @When("^I click on Articles$")
     public void i_click_on_the_MangaAnime_Part_in_Articles() throws InterruptedException {
         System.out.println(sabukaruHomePage.just_to_check_the_string());
-        sabukaruMangaAnimePage = sabukaruHomePage.click_on_the_Manga_Anime_Link();
+        sabukaruMangaAnimePage = sabukaruHomePage.click_on_the_Articles_Link();
 
 
         //sabukaruMangaAnimePage = sabukaruHomePage.click_on_the_Manga_Anime_Link();
@@ -48,6 +48,6 @@ public class SabukaruHomePageSteps extends BaseTest {
     @Then("^I should find myself in the sabukaru articles Page$")
     public void i_am_on_the_articles_page(){
         String strUrl = driver.getCurrentUrl();
-        Assert.assertTrue(strUrl.equalsIgnoreCase(Constants.MANGA_ANIME_PAGE_URL));
+        Assert.assertTrue(strUrl.equalsIgnoreCase(Constants.ARTICLES_PAGE_URL));
     }
 }

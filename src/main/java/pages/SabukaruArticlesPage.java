@@ -19,6 +19,12 @@ public class SabukaruArticlesPage extends BaseTest {
     public String getTitle(){
         return driver.getTitle();
     }
+    public SaburakuMangaAnimePage gotoSaburakuMangaAnimePage() throws InterruptedException {
+        MangaAnimeIcon.click();
+        Thread.sleep(5000);
+        return new SaburakuMangaAnimePage();
+    }
+
 
 
 

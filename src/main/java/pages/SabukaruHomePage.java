@@ -17,7 +17,7 @@ public class SabukaruHomePage extends BaseTest{
         return driver.getTitle();
     }
     //do the actual clicking
-    public SabukaruArticlesPage click_on_the_Manga_Anime_Link() throws InterruptedException {
+    public SabukaruArticlesPage click_on_the_Articles_Link() throws InterruptedException {
         ArticlesIcon.click();
         Thread.sleep(5000);
         return new SabukaruArticlesPage();
